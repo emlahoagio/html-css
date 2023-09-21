@@ -18,6 +18,10 @@ html {
 #main {
 }
 
+.clear {
+  clear: both;
+}
+
 #header {
   height: 46px;
   background-color: #000;
@@ -156,6 +160,26 @@ html {
   font-size: 16px;
   text-align: justify;
   line-height: 1.4;
+}
+
+#content .member-list {
+  margin-top: 48px;
+}
+
+#content .member-item {
+  float: left;
+  text-align: center;
+  width: calc(100% / 3);
+}
+
+#content .member-name {
+  font-size: 16px;
+}
+
+#content .member-img {
+  margin-top: 16px;
+  width: 154px;
+  border-radius: 4px;
 }
 
 #footer {
