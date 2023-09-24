@@ -22,6 +22,10 @@ html {
   clear: both;
 }
 
+.mr16 {
+  margin-right: 16px;
+}
+
 .text-while {
   color: #fff !important;
 }
@@ -127,10 +131,12 @@ html {
   width: 100%;
   text-align: center;
 }
+
 #slider .text-heading {
   font-weight: 500;
   font-size: 24px;
 }
+
 #slider .text-description {
   font-size: 16px;
   margin-top: 24px;
@@ -194,6 +200,7 @@ html {
   background-color: #fff;
   margin-top: 40px;
 }
+
 .ticket-list li {
   list-style-type: none;
   color: #757575;
@@ -201,12 +208,14 @@ html {
   padding: 12px 16px;
   border-bottom: 1px solid #ddd;
 }
+
 .ticket-list .sold-out {
   background-color: #f44336;
   color: #fff;
   padding: 3px 4px;
   margin-left: 16px;
 }
+
 .ticket-list .quantity {
   background-color: #000;
   color: #fff;
@@ -222,34 +231,42 @@ html {
 .place-list {
   margin: 32px -8px 48px;
 }
+
 .place-item {
   float: left;
   width: calc(100% / 3);
   padding: 0 8px;
 }
+
 .place-img {
   width: 100%;
   display: inline-block;
 }
+
 .place-img:hover {
   opacity: 0.6;
 }
+
 .place-body {
   background-color: #fff;
   padding: 16px;
   font-size: 16px;
 }
+
 .place-heading {
   font-size: 16px;
 }
+
 .place-time {
   margin-top: 16px;
   color: #757575;
 }
+
 .place-desc {
   margin-top: 16px;
   line-height: 1.4;
 }
+
 .place-buy-btn {
   background-color: #000;
   color: #fff;
@@ -265,4 +282,88 @@ html {
 }
 
 #footer {
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.modal-container {
+  background-color: #fff;
+  width: 900px;
+  max-width: calc(100% - 32px);
+  min-height: 200px;
+  position: relative;
+}
+
+.modal-header {
+  background-color: #009688;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #fff;
+}
+
+.modal-close {
+  position: absolute;
+  color: #fff;
+  right: 0;
+  padding: 16px;
+}
+
+.modal-close:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.modal-body {
+  padding: 16px;
+}
+
+.modal-label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.modal-input {
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+#buy-ticket {
+  background-color: #009688;
+  color: #fff;
+  width: 100%;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+#buy-ticket:hover {
+  opacity: 0.9;
+}
+
+.modal-footer {
+  padding: 16px;
+  text-align: right;
+}
+
+.modal-footer a {
+  color: #2196f3;
 }
