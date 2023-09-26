@@ -13,17 +13,17 @@
   <div id="main">
     <div id="header">
       <ul id="nav">
-        <li><a href="">home</a></li>
-        <li><a href="">main</a></li>
-        <li><a href="">tour</a></li>
-        <li><a href="">contact</a></li>
+        <li><a href="#">home</a></li>
+        <li><a href="#band">band</a></li>
+        <li><a href="#tour">tour</a></li>
+        <li><a href="#contact">contact</a></li>
         <li>
           <a href="#"> more <i class="nav-arrow-down ti-angle-down"></i>
           </a>
           <ul class="subnav">
-            <li><a href="">merchandise</a></li>
-            <li><a href="">extras</a></li>
-            <li><a href="">media</a></li>
+            <li><a href="#">Merchandise</a></li>
+            <li><a href="#">Extras</a></li>
+            <li><a href="#">Media</a></li>
           </ul>
         </li>
       </ul>
@@ -39,7 +39,7 @@
     </div>
     <div id="content">
       <!-- About -->
-      <div class="content-section">
+      <div id="band" class="content-section">
         <h2 class="section-heading">THE BAND</h2>
         <p class="section-sub-heading">We love music</p>
         <p class="about-text"> We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur
@@ -49,7 +49,7 @@
           cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
           elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
           exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-        <div class="member-list">
+        <div class="member-list row">
           <div class="text-center col col-3">
             <p class="member-name">Name</p>
             <img src="./assets/img/team/bandmember1.jpeg" alt="" class="member-img" />
@@ -65,7 +65,7 @@
         </div>
       </div>
       <!-- Tour -->
-      <div class="tour-section">
+      <div id="tour" class="tour-section">
         <div class="content-section">
           <h2 class="section-heading text-while">TOUR DATES</h2>
           <p class="section-sub-heading text-while"> Remember to book your tickets! </p>
@@ -82,7 +82,7 @@
                 <h3 class="place-heading">New York</h3>
                 <p class="place-time">Fri 27 Nov 2016</p>
                 <p class="place-desc"> Praesent tincidunt sed tellus ut rutrum sed vitae justo. </p>
-                <button class="js-buy-ticket place-buy-btn"> Buy Tickets </button>
+                <button class="js-buy-ticket btn"> Buy Tickets </button>
               </div>
             </div>
             <div class="col-3 col">
@@ -91,7 +91,7 @@
                 <h3 class="place-heading">Paris</h3>
                 <p class="place-time">Sat 28 Nov 2016</p>
                 <p class="place-desc"> Praesent tincidunt sed tellus ut rutrum sed vitae justo. </p>
-                <button class="js-buy-ticket place-buy-btn"> Buy Tickets </button>
+                <button class="js-buy-ticket btn"> Buy Tickets </button>
               </div>
             </div>
             <div class="col-3 col">
@@ -100,14 +100,14 @@
                 <h3 class="place-heading">San Francisco</h3>
                 <p class="place-time">Sun 29 Nov 2016</p>
                 <p class="place-desc"> Praesent tincidunt sed tellus ut rutrum sed vitae justo. </p>
-                <button class="js-buy-ticket place-buy-btn"> Buy Tickets </button>
+                <button class="js-buy-ticket btn"> Buy Tickets </button>
               </div>
             </div>
           </div>
         </div>
       </div>
       <!-- Contact -->
-      <div class="content-section">
+      <div id="contact" class="content-section">
         <h2 class="section-heading">CONTACT</h2>
         <p class="section-sub-heading">Fan? Drop a note!</p>
         <div class="row contact-content">
@@ -131,13 +131,28 @@
                   <input type="text" name="" id="" class="form-control" placeholder="Message" />
                 </div>
               </div>
-              <input class="mt-16 form-submit-btn" type="submit" value="SEND" />
+              <input class="mt-16 btn pull-right" type="submit" value="SEND" />
             </form>
           </div>
         </div>
       </div>
+      <!-- Map -->
+      <div class="map-section">
+        <img src="./assets/img/map.jpg" alt="map">
+      </div>
     </div>
-    <div id="footer"></div>
+    <div id="footer" class="text-center">
+      <div class="social-list">
+        <a href=""><i class="ti-facebook"></i></a>
+        <a href=""><i class="ti-instagram"></i></a>
+        <a href=""><i class="ti-youtube"></i></a>
+        <a href=""><i class="ti-pinterest"></i></a>
+        <a href=""><i class="ti-twitter"></i></a>
+        <a href=""><i class="ti-linkedin"></i></a>
+      </div>
+      <p class="copyright"> Power by <a href="">QuanDTM</a>
+      </p>
+    </div>
   </div>
   <div class="modal js-modal">
     <div class="modal-container">
