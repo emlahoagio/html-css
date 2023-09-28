@@ -1,0 +1,122 @@
+.header {
+  height: 120px;
+  background-image: linear-gradient(0, #fe6433, #f53e2d);
+}
+
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar__list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 4px;
+}
+
+.navbar__list-item {
+  margin: 0 8px;
+  position: relative;
+  min-height: 26px;
+}
+
+.navbar__list-item--showqr:hover .navbar__qrcode {
+  display: block;
+  animation: fadeIn ease-in 0.3s;
+}
+
+.navbar__list-item,
+.navbar__list-item-link {
+  display: inline-block;
+  font-size: 1.4rem;
+  color: var(--white-color);
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.navbar__list-item:hover,
+.navbar__list-item-link:hover,
+.navbar-icon-link:hover {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar__list-item,
+.navbar__list-item-link,
+.navbar-icon-link,
+.navbar__list {
+  display: inline-flex;
+  align-items: center;
+}
+
+.navbar__list-item--strong {
+  font-weight: 400;
+}
+
+.navbar__list-item--separate::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-left: 1px solid #fb9086;
+  height: 16px;
+  top: 50%;
+  right: -8px;
+  transform: translateY(-50%);
+}
+
+.navbar-icon-link {
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+.navbar__icon {
+  font-size: 1.8rem;
+  margin: 0 4px;
+}
+
+.navbar__list-item--cant-click {
+  cursor: text;
+  color: var(--white-color);
+}
+
+/* QR code */
+.navbar__qrcode {
+  width: 186px;
+  background-color: var(--white-color);
+  position: absolute;
+  left: 0;
+  top: 128%;
+  padding: 8px;
+  border-radius: 2px;
+  display: none;
+}
+
+.navbar__qrcode::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 28px;
+  left: 0;
+  top: -16px;
+  display: block;
+}
+
+.navbar__qrcode-img {
+  width: 100%;
+}
+
+.navbar__app {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar__app-img {
+  height: 18px;
+}
+
+.navbar__app-img:first-child {
+  margin-left: 12px;
+}
+.navbar__app-img:last-child {
+  margin-right: 12px;
+}
