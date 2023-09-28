@@ -20,9 +20,9 @@
   min-height: 26px;
 }
 
+.navbar__notify--show:hover .navbar__notify,
 .navbar__list-item--showqr:hover .navbar__qrcode {
   display: block;
-  animation: fadeIn ease-in 0.3s;
 }
 
 .navbar__list-item,
@@ -88,7 +88,8 @@
   top: 128%;
   padding: 8px;
   border-radius: 2px;
-  display: none;
+  animation: fadeIn ease-in 0.3s;
+  /* display: none; */
 }
 
 .navbar__qrcode::before {
@@ -119,4 +120,123 @@
 }
 .navbar__app-img:last-child {
   margin-right: 12px;
+}
+
+/* Notification */
+.navbar__notify::before {
+  content: "";
+  border: solid;
+  border-width: 20px 30px;
+  border-color: transparent transparent var(--white-color) transparent;
+  position: absolute;
+  right: 0;
+  top: -30px;
+}
+.navbar__notify::after {
+  content: "";
+  height: 20px;
+  display: block;
+  position: absolute;
+  width: 100px;
+  right: 0;
+  top: -16px;
+}
+
+.navbar__notify {
+  position: absolute;
+  top: 128%;
+  right: 0;
+  width: 400px;
+  background-color: var(--white-color);
+  border: 1px solid #d3d3d3;
+  cursor: default;
+  transform-origin: calc(100% - 28px) top;
+  animation: notifyGrowth ease-in 0.25s;
+  will-change: opacity, transform;
+  /* display: none; */
+}
+
+@keyframes notifyGrowth {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.navbar__notify-header {
+  height: 40px;
+  background-color: var(--white-color);
+}
+
+.navbar__notify-header h3 {
+  color: #999;
+  margin: 0 0 0 12px;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 40px;
+}
+
+.navbar__notify-list {
+  padding-left: 0;
+}
+
+.navbar__notify-item {
+  display: flex;
+}
+
+.navbar__notify-item:hover {
+  background-color: #f7f7f7;
+}
+
+.navbar__notify-item--viewed {
+  background-color: rgb(238, 77, 45, 0.08);
+}
+
+.navbar__notify-link {
+  display: flex;
+  padding-left: 12px;
+  text-decoration: none;
+  width: 100%;
+}
+
+.navbar__notify-img {
+  width: 48px;
+  object-fit: contain;
+}
+
+.navbar__notify-info {
+  flex: 1;
+  margin-left: 12px;
+}
+
+.navbar__notify-name {
+  display: block;
+  font-size: 1.4rem;
+  color: var(--text-color);
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+
+.navbar__notify-desc {
+  display: block;
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 4px;
+}
+
+.navbar__notify-footer {
+  display: flex;
+}
+.navbar__notify-footer-btn {
+  text-decoration: none;
+  color: var(--text-color);
+  width: 100%;
+  padding: 12px 0;
+  font-weight: 400;
+  font-size: 1.4rem;
+  text-align: center;
 }
